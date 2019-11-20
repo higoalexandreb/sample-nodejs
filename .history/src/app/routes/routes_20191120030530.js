@@ -4,6 +4,8 @@ module.exports = (app) => {
     });
 
     app.get('/books', function(req, res){
-        res.marko(require('../views/books/list.marko'));
+        res.marko(
+            require('../views/books/list.marko')
+        );
     });
 }
